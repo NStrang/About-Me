@@ -4,13 +4,62 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
+             BackgroundColor="Teal"
              x:Class="AboutMe.MainPage">
 
     <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Nick Strang" 
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+       
+            <Frame
+               Grid.Row="0"
+               Grid.Column="0"
+               Margin="20"
+               BackgroundColor="White"
+               CornerRadius="5"
+               HasShadow="True">
+            <StackLayout>
+                <BoxView
+                    BackgroundColor="Blue"
+                    HeightRequest="100"
+                    WidthRequest="100" />
+
+                <Label Text="Nick Strang" 
            HorizontalOptions="Center"
            VerticalOptions="CenterAndExpand" />
+
+            </StackLayout>
+        </Frame>
+        
+            <Frame
+                Grid.Row="0"
+                Grid.Column="1"
+               Margin="20"
+               BackgroundColor="White"
+               CornerRadius="5"
+               HasShadow="True">
+            <StackLayout>
+                <BoxView
+                    BackgroundColor="Blue"
+                    HeightRequest="100"
+                    WidthRequest="100" />
+
+                <Label Text="Nick Strang" 
+           HorizontalOptions="Center"
+           VerticalOptions="CenterAndExpand" />
+
+            </StackLayout>
+        </Frame>
+            
+        </Grid>
     </StackLayout>
 
 </ContentPage>
